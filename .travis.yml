@@ -1,0 +1,14 @@
+language: csharp
+solution: CodingAssessment.sln
+mono: none
+dotnet: 4.7.2
+
+install:
+- dotnet restore
+
+script:
+- dotnet build
+- dotnet test CodingAssessmentTests/CodingAssessmentTests.csproj
+
+notificatons:
+    email: false
